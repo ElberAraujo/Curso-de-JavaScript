@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício de Sistema de Cidadania</title>
+</head>
+<body>
+  <h1>Sistema para saber se o Cidadão é Estranjeiro ou Não</h1>
+  Cidadão: <input type="search" name="txtpais" id="txtpais">
+  <input type="button" value="verificar" onclick="search()">
+  <div id="res">
+
+    <script>
+      function search() {
+        var txtp = window.document.querySelector('input#txtpais')
+        var res = window.document.querySelector('div#res')
+        var pais = Search(txtp.value)
+      }
+    </script>
+</body>
+</html>
